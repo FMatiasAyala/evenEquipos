@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/eventos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <title>Document</title>
+</head>
+<body>
+<button id="btn-home"> <a href="http://192.168.1.53:4000/datos">HOME</a></button>
+<div class="contenedorInfo">
+    <div id="info-equipo"> 
+
+        <!--  -->
+    </div>
+  </div>  
+<div class="contenedor">
+
+          <div class="contenedorTabla">
+            <table id="mi-tabla">
+                <th>Operador</th>
+                <th>Descripcion</th>
+                <th>Estado</th>
+                <th>Fecha evento</th>
+                <th>Contrato</th>
+                <th>Num.Reporte</th>
+                <tbody id="cuerpo-tabla">
+          <!-- Cuerpo tabla -->
+              </tbody>
+          </table>
+          </div>
+          <form id="miFormulario">
+            <div class="formulario-container">
+                <h2>Ingresar Datos</h2>
+                <div class="form-group">
+                    <label for="operadorInput">Operador:</label>
+                    <select id="operadorInput" required>
+                        <option value="">Selecciona un operador</option>
+                        <option value="Agustin">Agustin</option>
+                        <option value="Matias">Matias</option>
+                        <option value="Mauricio">Mauricio</option>
+                        <option value="Nicolas">Nicolas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="descripcionInput">Descripcion:</label>
+                    <input type="text" id="descripcionInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="estadoInput">Estado:</label>
+                    <select id="estadoInput" required>
+                        <option value="">Selecciona estado</option>
+                        <option value="Operativo">Operativo</option>
+                        <option value="Fuera de servicio">Fuera de servicio</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="numReporteInput">Num. Reporte:</label>
+                    <input type="text" id="numReporteInput" required>
+                </div>
+                <div class="form-group">
+                    <label for="fechaInput">Fecha:</label>
+                    <input type="text" id="fechaInput" readonly>
+                </div>
+                <button type="submit">Agregar Datos</button>
+            </div>
+        </form>
+    </div>
+
+
+
+
+<script src="../scripts/eventos.js"></script>
+</body>
+</html>

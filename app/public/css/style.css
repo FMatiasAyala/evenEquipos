@@ -1,0 +1,51 @@
+body {
+    background-color: #88abe7;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+
+
+
+
+#mi-tabla {
+    border-collapse: collapse;
+    width: 80%;
+    margin: auto;
+}
+
+#mi-tabla th {
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    padding: 10px;
+}
+
+#mi-tabla td {
+    padding: 8px;
+}
+#cuerpo-tabla  tr{
+    transition: transform 0.3s ease-in;
+}
+
+#cuerpo-tabla tr:nth-child(odd) {
+    background-color: white; /* Fondo blanco para filas impares */
+}
+
+#cuerpo-tabla  tr:nth-child(even) {
+    background-color: #e6e6e6; /* Fondo gris claro para filas pares */
+}
+
+#cuerpo-tabla  tr:hover {
+    background-color: #add8e6; /* Cambia el color al pasar el mouse sobre la fila */
+    transform: scale(1.02);
+}
+
+.contrato-button {
+    background-image: url('../img/contrato.png');
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+    padding-left: 30px;
+    height: 50px;
+    cursor: pointer;
+}

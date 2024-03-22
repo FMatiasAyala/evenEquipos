@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@100;500;800&family=Nunito:wght@200;400;500;600;800&family=Open+Sans:wght@300;400;500;600;700;800&family=Poppins:wght@100;200;300;400;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,400&family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+
+body {
+    background-color: #88abe7;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.contenedor {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/* btn */
+#btn-home {
+    display: flex; /* Convertir en bloque */
+    padding: 10px 20px; /* Añadir relleno */
+    background-color: #007bff; /* Color de fondo */
+    color: #fff; /* Color del texto */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Borde redondeado */
+    cursor: pointer; /* Cambiar cursor a mano */
+    text-align: center; /* Alinear texto al centro */
+    text-decoration: none; /* Sin subrayado */
+    font-size: 16px; /* Tamaño de fuente */
+}
+
+#btn-home:hover {
+    background-color: #0056b3; /* Cambiar color de fondo al pasar el mouse */
+}
+.contenedorInfo {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    float: left; /* Alinea el contenedor a la izquierda */
+    margin-top: 2rem;
+    font-size: 0.8rem;
+
+}
+
+
+.contenedorTabla{
+    display: relative;
+    max-height: 500px; /* Altura máxima de la tabla */
+    overflow-y: auto; /* Añade una barra de desplazamiento vertical cuando sea necesario */
+
+}
+#mi-tabla {
+    border-collapse: collapse;
+    width: 100%;
+    margin: auto;
+    
+}
+
+#mi-tabla th {
+    background-color: #007bff; /* Fondo azul */
+    color: white;
+    padding: 10px;
+}
+
+#mi-tabla td {
+    padding: 8px;
+}
+#cuerpo-tabla  tr{
+    cursor: pointer;
+
+}
+
+#cuerpo-tabla tr:nth-child(odd) {
+    background-color: white; /* Fondo blanco para filas impares */
+}
+
+#cuerpo-tabla  tr:nth-child(even) {
+    background-color: #e6e6e6; /* Fondo gris claro para filas pares */
+}
+
+#cuerpo-tabla  tr:hover {
+    background-color: #add8e6; /* Cambia el color al pasar el mouse sobre la fila */
+
+}
+
+
+/* Formulario */
+.formulario-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    float: left; /* Alinea el contenedor a la izquierda */
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,45 @@
+<!-- tabla.ejs -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+<!--   <link rel="stylesheet" href="../public/css/style.css"> -->
+<link rel="stylesheet" href="../css/style.css">
+
+  <title>Inventario de Equipos</title>
+</head>
+<body>
+   
+    <form id="miFormulario">
+        <label for="consultaInput">Ingrese el servicio: </label>
+        <input type="text" id="consultaInput" name="consulta">
+        <div class="form-check">
+          <input type="checkbox" value="" id="todoCheckbox"/>
+          <label class="form-check-label" for=""> TODO </label>
+        </div>
+        <button type="submit" >Buscar</button>
+      </form>
+
+<table id="mi-tabla">
+    <th>Servicio</th>
+    <th>Marca</th>
+    <th>Modelo</th>
+    <th>Ubicacion</th>
+    <th>Contrato</th>
+    <th>Eventos</th>
+
+    <tbody id="cuerpo-tabla">
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+        <td> - </td>
+<!-- Cuerpo tabla -->
+    </tbody>
+</table>
+    
+
+  <script src="../scripts/tabla.js"></script>
+</body>
+</html>
